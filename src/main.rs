@@ -1,11 +1,7 @@
-use std::io;
-
 fn main() {
-    println!("Hello world!");
-    let mut input = String::new();
+    let x = (i32::MAX as i64) + 1;
+    let y = 10_i32;
 
-    io::stdin()
-        .read_line(&mut input)
-        .expect("failed to read line");
-    println!("{}", input);
+    let z = x as i32 / y;
+    println!("{}", z);
 }
